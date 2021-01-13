@@ -1,7 +1,7 @@
 const  Sequelize  = require('sequelize');
-const database = require('../db');
+const banco = require('../banco/configBanco.js');
 
-const Livro = database.define('livro', {
+const Livro = banco.define('livro', {
     id: {
         type: Sequelize.INTEGER, 
         autoIncrement: true, 
